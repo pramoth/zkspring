@@ -14,9 +14,19 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+	<distributionManagement>
+		<repository>
+			<id>Geniustree Release</id>
+			<url>https://nexus.geniustree.io/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>Geniustree Snapshots</id>
+			<url>https://nexus.geniustree.io/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 	<scm>
-		<connection>scm:svn:http://code.google.com/p/zkspring/source/browse/</connection>
-		<url>http://code.google.com/p/zkspring/source/browse/</url>
+		<connection>scm:git:git@github.com:pramoth/zkspring.git</connection>
+		<url>https://github.com/pramoth/zkspring</url>
 	</scm>
 	<properties>
 		<zk.version>8.0.0</zk.version>
@@ -126,6 +136,19 @@
 					<source>1.5</source>
 					<target>1.5</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.1</version>
+				<configuration>
+					<additionalparam>-Xdoclint:none</additionalparam>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
 			</plugin>
 		</plugins>
 	</build>
