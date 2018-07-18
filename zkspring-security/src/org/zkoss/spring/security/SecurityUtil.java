@@ -69,7 +69,7 @@ import org.springframework.security.acls.model.Sid;
 import org.springframework.security.acls.model.SidRetrievalStrategy;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.GrantedAuthorityImpl;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.zkoss.spring.SpringUtil;
@@ -350,7 +350,7 @@ public class SecurityUtil {
 
         for (int i = 0; i < roles.length; i++) {
             String role = roles[i].trim();
-            requiredAuthorities.add(new GrantedAuthorityImpl(role));
+            requiredAuthorities.add(new SimpleGrantedAuthority(role));
         }
 
         return requiredAuthorities;

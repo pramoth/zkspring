@@ -92,7 +92,7 @@ public class ZkAuthenticationEntryPoint extends LoginUrlAuthenticationEntryPoint
 	private static final String DEFAULT_LOGIN_OK_TEMPLATE = "~./zul/zkspring/security/loginOKTemplate.zul";
 	
 	public ZkAuthenticationEntryPoint() {
-		setLoginFormUrl(DefaultLoginPageGeneratingFilter.DEFAULT_LOGIN_PAGE_URL);
+		super(DefaultLoginPageGeneratingFilter.DEFAULT_LOGIN_PAGE_URL);
 		//setForceHttps(true);
 	}
 	

@@ -311,7 +311,6 @@ public class ZkEventSecurityBeanDefinitionParser implements BeanDefinitionParser
 	        if (formEntryPoint != null) {
 		        String loginFormUrl = (String) formEntryPoint.getPropertyValues().getPropertyValue("loginFormUrl").getValue();
 		        if (StringUtils.hasText(loginFormUrl)) {
-		        	entryPoint.setLoginFormUrl(loginFormUrl);
 		        	entryPoint.setLoginFailUrl(loginFormUrl);
 		        }
 	        	PropertyValue pv = formEntryPoint.getPropertyValues().getPropertyValue("forceHttps");
@@ -362,7 +361,6 @@ public class ZkEventSecurityBeanDefinitionParser implements BeanDefinitionParser
 		//if not defined, use login-page defined in form-login from http/FORM_LOGIN_ENTRY_POINT
 		final String loginPage = element.getAttribute(ATT_LOGIN_PAGE);
 		if (StringUtils.hasText(loginPage)) {
-			entryPoint.setLoginFormUrl(loginPage);
         	if (!StringUtils.hasText(loginFailUrl)) {
 	        	entryPoint.setLoginFailUrl(loginPage + "?login_error=true");
 	        }
@@ -370,7 +368,6 @@ public class ZkEventSecurityBeanDefinitionParser implements BeanDefinitionParser
 		    if (formEntryPoint != null) {
 		        String loginFormUrl = (String) formEntryPoint.getPropertyValues().getPropertyValue("loginFormUrl").getValue();
 		        if (StringUtils.hasText(loginFormUrl)) {
-		        	entryPoint.setLoginFormUrl(loginFormUrl);
 		        	if (!StringUtils.hasText(loginFailUrl)) {
 			        	entryPoint.setLoginFailUrl(loginFormUrl);
 			        }

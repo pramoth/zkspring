@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.zkoss.zk</groupId>
 	<artifactId>zkspring-core</artifactId>
-	<version>3.2.1-SNAPSHOT</version>
+	<version>4.2.0-SNAPSHOT</version>
 	<name>ZK Spring Core</name>
 	<description>ZK Spring Core Integration Library</description>
 	<url>http://www.zkoss.org/zkspring-core</url>
@@ -21,7 +21,7 @@
 	<properties>
 		<zk.version>8.0.0</zk.version>
 		<zkel.version>1.0.2</zkel.version>
-		<spring.version>3.0.7.RELEASE</spring.version>
+		<spring.version>4.3.18.RELEASE</spring.version>
 		<servlet-api.version>2.4</servlet-api.version>
 		<javassist.version>3.14.0-GA</javassist.version>
 		<reflections.version>0.9.5-RC2</reflections.version>
