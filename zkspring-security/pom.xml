@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.zkoss.zk</groupId>
 	<artifactId>zkspring-security</artifactId>
-	<version>4.2.0</version>
+	<version>4.2.1-SNAPSHOT</version>
 	<name>ZK Spring Security</name>
 	<description>ZK Spring Integration Security Library</description>
 	<url>http://www.zkoss.org/zkspring-security</url>
@@ -27,7 +27,7 @@
 		<connection>scm:git:git@github.com:pramoth/zkspring.git</connection>
         <developerConnection>scm:git:git@github.com:pramoth/zkspring.git</developerConnection>
 		<url>https://github.com/pramoth/zkspring</url>
-	  <tag>zkspring-security-4.2.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 	<properties>
 		<zk.version>8.0.0</zk.version>
